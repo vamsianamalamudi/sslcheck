@@ -1,0 +1,22 @@
+{
+    "connectivity":{
+        "threshold":30,
+        "timeout":4,
+        "no_of_requests": 20,
+        "production_port":443,
+        "http":{
+            "www.google.com":{ "threshold":30, "production_port":443},
+            "www.phonepe.com":{ "threshold":30, "production_port":443 },
+            "www.yahoo.com":{ "threshold":30, "production_port":443 }
+        },
+        "https":{
+            "www.google.com":{ "threshold":30,  "ssl_monitoring": true  },
+            "www.yahoo.com":{ "threshold":30,"ssl_monitoring": true  },
+            "www.gmail.com":{ "threshold":30,  "ssl_monitoring": true  }
+        },
+        "tcp":{
+            "www.nginx.com":{ "threshold":30, "production_port":443 }
+        }
+
+    }  
+}
