@@ -11,12 +11,10 @@
         },
         "https":{
             "www.google.com":{ "threshold":30,  "ssl_monitoring": true  },
-            "www.yahoo.com":{ "threshold":30,"ssl_monitoring": true  },
+            "www.yahoo.com":{ "threshold":30, "production_port":443, "ssl_monitoring": true  },
             "www.gmail.com":{ "threshold":30,  "ssl_monitoring": true  }
         },
-        "tcp":{
-            "www.nginx.com":{ "threshold":30, "production_port":443 }
-        }
+       
 
     }  
 }
